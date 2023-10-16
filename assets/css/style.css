@@ -673,6 +673,7 @@ a {
 
 .footer .social-link {
     margin-top: 40px;
+    opacity: 0.7;
 }
 
 .footer .item a:hover {
@@ -680,7 +681,7 @@ a {
 }
 
 .footer .social-link:hover {
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .footer .row-bottom {
