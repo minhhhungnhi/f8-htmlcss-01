@@ -150,11 +150,6 @@ a {
     padding: 43px 0 64px;
 }
 
-.client .row {
-    display: flex;
-    justify-content: space-between; /* Để hai phần tử con đẩy ra hai đầu của thẻ cha */
-}
-
 .client .desc {
     font-weight: 500;
     font-size: 1.6rem;
@@ -167,8 +162,22 @@ a {
 }
 
 .client .row-images {
+    display: flex;
+    justify-content: space-between; /* Để hai phần tử con đẩy ra hai đầu của thẻ cha */
     align-items: center;
-    margin-top: 96px;
+    margin-top: 70px;
+}
+
+.client .row-images a {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    padding: 0 42px;
+    border-radius: 12px;
+}
+
+.client .row-images a:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* =========== Guides =========== */
