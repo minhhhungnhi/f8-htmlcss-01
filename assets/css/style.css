@@ -55,6 +55,11 @@ a {
     overflow: hidden;
 }
 
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* =========== Header =========== */
 .header {
     position: relative;
