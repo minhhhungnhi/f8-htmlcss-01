@@ -61,16 +61,30 @@ a {
 }
 
 /* =========== Header =========== */
-.header {
-    position: relative;
+.fixed-header {
     background: #e6f0ff;
-    height: 100vh; /* Nên để chiều cao là đơn vị tương đối nó phù hợp với nhiều màn hình thiết bị khác nhau */
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+
+.hero-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(
+        100vh - 90px
+    ); /* Nên để chiều cao là đơn vị tương đối 
+                                Nó phù hợp với nhiều màn hình thiết bị khác nhau */
+    background: #e6f0ff;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
 }
 
 .navbar ul {
@@ -107,14 +121,14 @@ a {
 }
 
 .hero {
-    margin-top: 130px;
+    margin-top: 200px; /* Cái này xảy ra Margin-Collsnapse ==>Margin thẻ con .hero  Lại Tác động vào cả thẻ cha .hero-wrap  */
 }
 
-.hero .info {
-    width: 51%;
+.hero-wrap .info {
+    width: 52%;
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.5; /* 1.5 này là =1.5*1.8rem=18px*1.5=27px 
@@ -123,15 +137,16 @@ a {
     color: #687690;
 }
 
-.hero .title {
+.hero-wrap .title {
     margin-top: 8px;
-    font-size: 6.4rem;
     font-weight: 700;
+    font-size: 6.4rem;
     line-height: 1.19; /* line-height=76px=1.19*6.4 */
     color: #000336;
 }
 
-.hero .desc {
+.hero-wrap .desc {
+    margin-top: 30px;
     font-weight: 400;
     color: #5a6473;
     font-size: 1.8rem; /* Hai cái này tỷ lệ với nhau */
@@ -238,7 +253,7 @@ a {
 
 .guide-item .title {
     margin-top: 26px;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 2rem;
     line-height: 1.1;
     /* text-align: center;  KHÔng CẦN thiết vì thuộc tính này nó sẽ thừa kế lại từ guide-item*/
@@ -254,7 +269,7 @@ a {
 }
 
 .guide-item .arrow {
-    margin-left: 6px;
+    margin-left: px;
 }
 
 .guide-cta {
@@ -291,7 +306,7 @@ a {
 
 .feature .desc {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.88;
     /* line-height: 30px; 187.5% */
 
@@ -299,16 +314,15 @@ a {
 }
 
 .feature .link {
-    color: #0689ff;
-    font-size: 18px;
+    display: flex;
+    align-items: center;
     font-weight: 600;
+    font-size: 1.8rem;
+    color: #0689ff;
+}
 
-    text-align: right; /*Không cần thiết vì có thuộc tính của thẻ cha 
-        display: flex;
-        justify-content: space-between; 
-    */
-
-    line-height: normal; /*Không cần thiết vì phần chữ này không cần điều chỉnh ngắt 2-3 dòng gì đó */
+.feature .link .arrow-right {
+    margin-left: 8px;
 }
 
 .feature .list {
@@ -463,7 +477,7 @@ a {
     display: block;
     margin-left: auto;
     width: 400px;
-    height: 600px;
+    height: 460px;
     border-radius: 12px;
     object-fit: cover;
 }
@@ -532,7 +546,6 @@ a {
     margin-top: 20px;
     width: 309px;
     color: #5a6473;
-    letter-spacing: 0.88px;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.88;
@@ -655,7 +668,7 @@ a {
     margin-top: 10px;
     white-space: normal;
     line-height: 1.75;
-    margin-top: 34px;
+    margin-top: 33px;
 }
 
 .footer .social {

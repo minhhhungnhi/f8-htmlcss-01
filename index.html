@@ -8,69 +8,71 @@
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
 
-        <!-- Nhúng font -->
+        <!-- Embed fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@;0,400,0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <!--Embeb font nội bộ-->
 
-        <!-- Nhúng Css -->
+        <!-- Style -->
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
         <main>
-            <!-- Header Nav -->
-            <header class="header">
+            <header class="fixed-header">
                 <div class="content">
+                    <!-- Navbar -->
                     <nav class="navbar">
                         <!-- Logo -->
-                        <img src="./assets/img/logo.svg" alt="Besnisk." />
+                        <a href="#!"
+                            ><img src="./assets/img/logo.svg" alt="Besnisk."
+                        /></a>
 
                         <!-- Navigation -->
                         <ul>
                             <li><a href="#!">Home</a></li>
-                            <li><a href="#!">Features</a></li>
                             <li><a href="#!">Services</a></li>
+                            <li><a href="#!">Features</a></li>
                             <li><a href="#!">Resources</a></li>
                             <li><a href="#!">Contact</a></li>
                         </ul>
 
                         <!-- Action -->
                         <div class="actions">
-                            <a href="#!" class="action-link">sign in</a>
-                            <a href="#!" class="btn action-btn">sign up</a>
+                            <a href="#!" class="action-link">Sign in</a>
+                            <a href="#!" class="btn action-btn">Sign up</a>
                         </div>
                     </nav>
-
-                    <!-- Hero -->
-                    <div class="hero">
-                        <div class="info">
-                            <p class="sub-title">Welcome to Besnik Agency</p>
-                            <h1 class="title">
-                                Discover a place you'll love to live.
-                            </h1>
-                            <p class="desc">
-                                Get the best real estate deals first, before
-                                they hit the mass market! hot foreclosure deals
-                                with one simple search
-                            </p>
-                            <a href="#!" class="btn hero-cta">More About Us</a>
-                        </div>
-
-                        <img
-                            src="./assets/img/hero-img.svg"
-                            alt="Discover a piace you'll love to live"
-                            class="hero-img"
-                        />
-                    </div>
                 </div>
             </header>
+
+            <!-- Hero -->
+            <div class="hero-wrap">
+                <div class="content">
+                    <div class="info">
+                        <p class="sub-title">Welcome to Besnik Agency</p>
+                        <h1 class="title">
+                            Discover a place you'll love to live.
+                        </h1>
+                        <p class="desc">
+                            Get the best real estate deals first, before they
+                            hit the mass market! HOT FORECLOSURE DEALS with one
+                            simple search
+                        </p>
+                        <a href="#!" class="btn hero-cta">More About Us</a>
+                    </div>
+
+                    <img
+                        src="./assets/img/hero-img.svg"
+                        alt="Discover a piace you'll love to live"
+                        class="hero-img"
+                    />
+                </div>
+            </div>
 
             <!-- Clients -->
             <div class="client">
@@ -81,11 +83,11 @@
 
                         <!-- Stars -->
                         <div class="stars">
-                            <img src="./assets/img/Start.svg" alt="start" />
-                            <img src="./assets/img/Start.svg" alt="start" />
-                            <img src="./assets/img/Start.svg" alt="start" />
-                            <img src="./assets/img/Start.svg" alt="start" />
-                            <img src="./assets/img/Start.svg" alt="start" />
+                            <img src="./assets/img/Star.svg" alt="star" />
+                            <img src="./assets/img/Star.svg" alt="star" />
+                            <img src="./assets/img/Star.svg" alt="star" />
+                            <img src="./assets/img/Star.svg" alt="star" />
+                            <img src="./assets/img/Star.svg" alt="star" />
                         </div>
                     </div>
 
@@ -263,23 +265,14 @@
                             <div class="body">
                                 <h3 class="title">
                                     <a href="#!" class="line-clamp"
-                                        >Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Atque, quis. Ipsum
-                                        ullam, temporibus non consectetur
-                                        cupiditate quos eius possimus
-                                        explicabo.</a
+                                        >CouCou Homestead</a
                                     >
                                 </h3>
                                 <p
                                     class="desc line-clamp"
                                     style="--line-clamp: 2"
                                 >
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. At illo harum similique
-                                    labore. Aspernatur vitae aut voluptatum
-                                    quam. Illo vitae molestiae dignissimos
-                                    accusamus, aliquam esse labore reprehenderit
-                                    iure enim sit.
+                                    8502 Preston Rd. Inglewood, Maine 98280
                                 </p>
                                 <div class="info">
                                     <img
@@ -480,7 +473,7 @@
 
                         <div class="info">
                             <h2 class="sub-title">
-                                You’ve found a neighborhood you love my.
+                                You’ve found a neighborhood you love.
                             </h2>
                             <p class="desc">
                                 When you own a home, you’re committing to living
@@ -519,10 +512,6 @@
                                 Subscribe to our Newsletter!
                             </h2>
                             <p class="desc line-clamp" style="--line-clamp: 3">
-                                Subscribe to our newsletter and stay updated.
-                                Subscribe to our newsletter and stay updated.
-                                Subscribe to our newsletter and stay updated.
-                                Subscribe to our newsletter and stay updated.
                                 Subscribe to our newsletter and stay updated.
                             </p>
                             <a href="#!" class="btn">Subscribe</a>
@@ -598,7 +587,7 @@
                         <column>
                             <h3 class="heading">Get in touch</h3>
                             <p class="desc">
-                                You'll find your next home in any style you
+                                You'll find your next home, in any style you
                                 prefer
                             </p>
                             <div class="social">
